@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .3s linear;
 }
 
 html {
@@ -113,6 +114,38 @@ a {
 
 }
 
+.action_btn{
+    font-size: 1rem;
+    font-family: poppins;
+    margin-left: 20px;
+    position: relative;
+    top: 19px;
+    border: none;
+    background: #1f3389;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+}
+
+.action_btn:hover{
+    opacity: 0.8;
+}
+
+.action_btn:active{
+    opacity: 0.6;
+}
+
+
+.aboutus img{
+    cursor: pointer;
+}
+
+.aboutus img:hover{
+    transform: scale(1.2);
+}
+
+
+
 /* header   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
 
 .header {
@@ -137,7 +170,7 @@ a {
 
 .header li a {
   display: block;
-  padding: 20px 20px 4px 114px;
+  padding: 20px 20px 4px 136px;
   text-decoration: none;
 }
 
@@ -150,16 +183,17 @@ a {
   /* color: #ffd300; */
   display: block;
   float: left;
-  font-size: 2em;
   padding: 2px 0px;
   padding-left: 8px;
   position: absolute;
   top: 22px;
   left: 60px;
-  filter: invert(1);
   cursor: pointer;
 }
 
+.header .logo:hover{
+    transform: scale(1.2);
+}
 /* menu */
 
 .header .menu {
@@ -276,6 +310,7 @@ footer .container h2:before{
 
 footer .container p{
     color: #000;
+    margin-top: 5px;
 }
 
 footer .sci{
@@ -330,6 +365,7 @@ footer .sci li a:hover{
     color: #3586ff;
     transform: translateX(10px);
     font-weight: 600;
+    text-decoration: underline;
 }
 
 .quicklinks li a{
@@ -371,14 +407,13 @@ footer .sci li a:hover{
     margin-left: 20px;
     transition: 0.3s;
 }
-
 .contact li a:hover{
     color: #3586ff;
     transform: translateX(10px);
+    font-weight: 600;
 }
 
 .contact li p:hover{
-    transition: 0.3s;
     transform: translateX(10px);
 }
 
@@ -396,7 +431,7 @@ footer .sci li a:hover{
     float: left;
   }
   .header li a {
-    padding: 20px 0px 0px 0px;
+    padding: 20px 0px 5px 0px;
     margin-left: 30px;
   }
   .header .menu {
